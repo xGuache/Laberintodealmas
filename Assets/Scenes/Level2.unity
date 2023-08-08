@@ -264,7 +264,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1962433971
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -111693,7 +111693,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 15.299457
+  orthographic size: 10.152513
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -111717,8 +111717,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757122695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 16.7, z: -10}
-  m_LocalScale: {x: 0.90277, y: 0.90277, z: 0.90277}
+  m_LocalPosition: {x: -25.7, y: 10.5, z: -10}
+  m_LocalScale: {x: 0.3417518, y: 0.71236676, z: 0.9825749}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -111799,7 +111799,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -209579213
-  m_SortingLayer: 4
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.5, y: 0, z: 0}
@@ -138058,8 +138058,8 @@ GameObject:
   - component: {fileID: 1612125045}
   - component: {fileID: 1612125048}
   - component: {fileID: 1612125047}
-  - component: {fileID: 1612125049}
-  - component: {fileID: 1612125050}
+  - component: {fileID: 1612125051}
+  - component: {fileID: 1612125052}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -138106,7 +138106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -209579213
-  m_SortingLayer: 4
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 317b8365a4649ab459f6cb58ec8f9f18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -138127,12 +138127,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612125042}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.2, y: 13.739, z: 0}
-  m_LocalScale: {x: 1.4844376, y: 1.306875, z: 1}
+  m_LocalPosition: {x: -34.38, y: 0.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1612125047
 Rigidbody2D:
@@ -138181,7 +138181,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6293845, y: 2.798439}
   m_EdgeRadius: 0
---- !u!114 &1612125049
+--- !u!114 &1612125051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138190,16 +138190,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1612125042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc91b34ced7b1114b8f298113c338790, type: 3}
+  m_Script: {fileID: 11500000, guid: a22cd9faee039b04f8d3494dcb07fcad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jumpableGround:
     serializedVersion: 2
-    m_Bits: 64
-  moveSpeed: 8
+    m_Bits: 0
+  Mov_Speed: 8
   JumpForce: 7
-  JumpSound: {fileID: 0}
---- !u!95 &1612125050
+--- !u!95 &1612125052
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -138209,7 +138208,7 @@ Animator:
   m_GameObject: {fileID: 1612125042}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: b810f2280bb2a6b4cbf996716e6e3d55, type: 2}
+  m_Controller: {fileID: 9100000, guid: 73e735dc8216a19439a5ac21b9877ed2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -138265,5 +138264,5 @@ Transform:
   - {fileID: 1118513123}
   - {fileID: 555383771}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

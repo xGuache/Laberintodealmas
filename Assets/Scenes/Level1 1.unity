@@ -30214,25 +30214,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &2024886834 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4001973190511294621, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
-  m_PrefabInstance: {fileID: 4001973189400264547}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2024886843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024886834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a22cd9faee039b04f8d3494dcb07fcad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_speed: 4
-  m_jumpForce: 7.5
 --- !u!1001 &2068359814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30507,6 +30488,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4001973190511294315, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001973190511294315, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
       propertyPath: DeathSound
       value: 
       objectReference: {fileID: 910209232}
@@ -30514,8 +30499,55 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4001973190511294621, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4001973190511294620, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
+--- !u!1 &4001973189400264548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4001973190511294621, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
+  m_PrefabInstance: {fileID: 4001973189400264547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4001973189400264549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001973189400264548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22cd9faee039b04f8d3494dcb07fcad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpableGround:
+    serializedVersion: 2
+    m_Bits: 0
+  Mov_Speed: 8
+  JumpForce: 7
+--- !u!95 &4001973189400264550
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001973189400264548}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73e735dc8216a19439a5ac21b9877ed2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6582335265234917491
 PrefabInstance:
   m_ObjectHideFlags: 0
