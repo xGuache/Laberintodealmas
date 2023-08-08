@@ -22,8 +22,7 @@ public class MovementPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //coll = GetComponent<BoxCollider2D>();
-
+        BxCol2D_Player = GetComponent<BoxCollider2D>();
         RB_Player = GetComponent<Rigidbody2D>();
         Anim_Player = GetComponent<Animator>();
         SpRnd_Player = GetComponent<SpriteRenderer>();
@@ -36,10 +35,10 @@ public class MovementPlayer : MonoBehaviour
         RB_Player.velocity = new Vector2(Mov_X * Mov_Speed, RB_Player.velocity.y);
 
 
-        if (Input.GetButtonDown("Jump"))// && IsGrounded())
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
 
-            RB_Player.velocity = new Vector2(/*RB_Player.velocity.x, JumpForce)*/0f, 7f);
+            RB_Player.velocity = new Vector2(/*RB_Player.velocity.x*/0f, JumpForce);
         }
 
         UpdateAnimation();
@@ -79,9 +78,9 @@ public class MovementPlayer : MonoBehaviour
          anim.SetInteger("state", (int)state);
      */}
 
-    /*private bool IsGrounded()
+    private bool IsGrounded()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
-    }*/
+        return Physics2D.BoxCast(BxCol2D_Player.bounds.center, BxCol2D_Player.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
 
 }

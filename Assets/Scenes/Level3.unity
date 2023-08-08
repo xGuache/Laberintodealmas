@@ -39577,6 +39577,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4001973190511294621, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001973190511294621, guid: 8465f5e46af7076428a4dcb1f7b055b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -39602,7 +39606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpableGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   Mov_Speed: 8
   JumpForce: 7
 --- !u!95 &4001973189400264556
