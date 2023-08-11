@@ -64,7 +64,6 @@ public class MovementPlayer : MonoBehaviour
             }
             else
             {
-                Anim_Player.SetBool("Player_Run", false);
                 AnimState = MovementState.Idle;
             }
 
