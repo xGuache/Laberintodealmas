@@ -7,6 +7,9 @@ TagManager:
   - Cara
   - Trap
   - Red_Elixir
+  - Blue_Elixir
+  - Green_Elixir
+  - Rainbow_Elixir
   layers:
   - Default
   - TransparentFX
@@ -44,9 +47,6 @@ TagManager:
   - name: Background
     uniqueID: 2332533325
     locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background3
     uniqueID: 605525291
     locked: 0
@@ -55,4 +55,10 @@ TagManager:
     locked: 0
   - name: Terrain
     uniqueID: 4085388083
+    locked: 0
+  - name: Player
+    uniqueID: 1755539231
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0

@@ -150,6 +150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a22cd9faee039b04f8d3494dcb07fcad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RB_Player: {fileID: 0}
+  Anim_Player: {fileID: 0}
+  SpRnd_Player: {fileID: 0}
+  BxCol2D_Player: {fileID: 0}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
@@ -297,4 +301,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Collected: {fileID: 0}
+  TagObject: 
   CaraText: {fileID: 0}
