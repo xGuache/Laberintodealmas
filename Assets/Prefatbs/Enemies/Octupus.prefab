@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526656976111111110}
   - component: {fileID: 1526656976111111105}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fall
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 1526656976423726196}
   - component: {fileID: 1526656976423726193}
   - component: {fileID: 1526656976423726154}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Octupus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,6 +181,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
+  currentWaypointIndex: 0
   speed: 2
 --- !u!65 &1526656976423726154
 BoxCollider:

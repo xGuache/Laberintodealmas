@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4355330209513635394}
   - component: {fileID: 4355330209513635395}
   - component: {fileID: 4355330209513635385}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9d557f9f7b0d3478cb2cfbdae1f15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finishSound: {fileID: 0}
 --- !u!82 &4355330209513635395
 AudioSource:
   m_ObjectHideFlags: 0

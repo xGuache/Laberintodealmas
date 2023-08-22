@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5309112234247797427}
   - component: {fileID: 5309112234247797426}
   - component: {fileID: 5309112234247797453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Geen_Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9115917297817232755}
   - component: {fileID: 9115917297817232754}
   - component: {fileID: 9115917297817232757}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Green_Elixir
   m_TagString: Green_Elixir
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4958029919409826116}
   - component: {fileID: 4958029919409826117}
   - component: {fileID: 4958029919409826118}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Purple_Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

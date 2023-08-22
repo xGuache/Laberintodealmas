@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7200585938697974303}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8984484227345809108}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,6 +242,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 8984484228673126416}
   - {fileID: 8984484228404565156}
+  currentWaypointIndex: 0
   speed: 2
 --- !u!1 &8984484228404565156
 GameObject:
@@ -252,7 +253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8984484228404565159}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Waypoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -283,7 +284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8984484228673126419}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Waypoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}

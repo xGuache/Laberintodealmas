@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6877477580179564826}
   - component: {fileID: 5539194810546095522}
   - component: {fileID: 4774290791343032646}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cara
   m_TagString: Cara
   m_Icon: {fileID: 0}
