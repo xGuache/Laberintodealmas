@@ -5,11 +5,10 @@ using TMPro;
 
 public class CollectItems : MonoBehaviour
 {
-    public AudioSource Collected;
+    
     public string TagObject;
-    private int Cara = 0;
-
- 
+    private int Craneos = 0;
+    public AudioSource CaraSound; 
     [SerializeField] private TextMeshProUGUI CaraText;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -46,9 +45,9 @@ public class CollectItems : MonoBehaviour
 
             case "Cara":
                 Destroy(collision.gameObject);
-                Collected.Play();
-                Cara++;
-                CaraText.text = "Cara: " + Cara;
+                CaraSound.Play();
+                Craneos++;
+                CaraText.text = "Craneos:" + Craneos;
                 break;
             default:
                 Debug.Log("kha");

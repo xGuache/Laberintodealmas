@@ -8,6 +8,8 @@ public class MovementPlayer : MonoBehaviour
     private Animator Anim_Player;
     private SpriteRenderer SpRnd_Player;
     private BoxCollider2D BxCol2D_Player;
+    public AudioSource JumpSound;
+    //public AudioSource WalkSound;
 
 
 
@@ -36,12 +38,14 @@ public class MovementPlayer : MonoBehaviour
     {
         Mov_X = Input.GetAxis("Horizontal");
         RB_Player.velocity = new Vector2(Mov_X * Mov_Speed, RB_Player.velocity.y);
+        
 
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
 
             RB_Player.velocity = new Vector2(RB_Player.velocity.x, JumpForce);
+            JumpSound.Play();
         }
 
         UpdateAnimation();
@@ -56,12 +60,15 @@ public class MovementPlayer : MonoBehaviour
             {
                 SpRnd_Player.flipX = true;
                 AnimState = MovementState.Run;
-            }
+                //WalkSound.Play();
+        }
             else if (Mov_X < 0f)
             {
                 AnimState = MovementState.Run;
                 SpRnd_Player.flipX = false;
-            }
+                //WalkSound.Play();
+                //WalkSound.Play();
+        }
             else
             {
                 AnimState = MovementState.Idle;

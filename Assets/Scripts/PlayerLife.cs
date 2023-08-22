@@ -31,6 +31,7 @@ public class PlayerLife : MonoBehaviour
         //DeathSound.Play();
         RB_Player.bodyType = RigidbodyType2D.Static;
         Anim_Player.SetTrigger("Death");
+        DeathSound.Play();
     }
    
     //Reload Current Scene
